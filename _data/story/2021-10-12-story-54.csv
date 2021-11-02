@@ -1,0 +1,870 @@
+title,pubdate,id,authors,categories,search,abstract,displaydate
+"DiscoDVT: Generating Long Text with Discourse-Aware Discrete Variational
+  Transformer",2021-10-12 13:41:06+00:00,http://arxiv.org/abs/2110.05999v1,"Haozhe Ji, Minlie Huang",cs.CL,story,"Despite the recent advances in applying pre-trained language models to
+generate high-quality texts, generating long passages that maintain long-range
+coherence is yet challenging for these models. In this paper, we propose
+DiscoDVT, a discourse-aware discrete variational Transformer to tackle the
+incoherence issue. DiscoDVT learns a discrete variable sequence that summarizes
+the global structure of the text and then applies it to guide the generation
+process at each decoding step. To further embed discourse-aware information
+into the discrete latent representations, we introduce an auxiliary objective
+to model the discourse relations within the text. We conduct extensive
+experiments on two open story generation datasets and demonstrate that the
+latent codes learn meaningful correspondence to the discourse structures that
+guide the model to generate long texts with better long-range coherence.",2021-10-12
+A guided journey through non-interactive automatic story generation,2021-10-08 10:01:36+00:00,http://arxiv.org/abs/2110.11167v1,Luis Miguel Botelho,"cs.CL, cs.AI",story,"We present a literature survey on non-interactive computational story
+generation. The article starts with the presentation of requirements for
+creative systems, three types of models of creativity (computational,
+socio-cultural, and individual), and models of human creative writing. Then it
+reviews each class of story generation approach depending on the used
+technology: story-schemas, analogy, rules, planning, evolutionary algorithms,
+implicit knowledge learning, and explicit knowledge learning. Before the
+concluding section, the article analyses the contributions of the reviewed work
+to improve the quality of the generated stories. This analysis addresses the
+description of the story characters, the use of narrative knowledge including
+about character believability, and the possible lack of more comprehensive or
+more detailed knowledge or creativity models. Finally, the article presents
+concluding remarks in the form of suggestions of research topics that might
+have a significant impact on the advancement of the state of the art on
+autonomous non-interactive story generation systems. The article concludes that
+the autonomous generation and adoption of the main idea to be conveyed and the
+autonomous design of the creativity ensuring criteria are possibly two of most
+important topics for future research.",2021-10-08
+Cut the CARP: Fishing for zero-shot story evaluation,2021-10-06 23:50:46+00:00,http://arxiv.org/abs/2110.03111v1,"Shahbuland Matiana, JR Smith, Ryan Teehan, Louis Castricato, Stella Biderman, Leo Gao, Spencer Frazier",cs.CL,story,"Recent advances in large-scale language models (Raffel et al., 2019; Brown et
+al., 2020) have brought significant qualitative and quantitative improvements
+in machine-driven text generation. Despite this, generation and evaluation of
+machine-generated narrative text remains a challenging problem. Objective
+evaluation of computationally-generated stories may be prohibitively expensive,
+require meticulously annotated datasets, or may not adequately measure the
+logical coherence of a generated story's narratological structure.
+  Informed by recent advances in contrastive learning (Radford et al., 2021),
+we present Contrastive Authoring and Reviewing Pairing (CARP): a scalable,
+efficient method for performing qualitatively superior, zero-shot evaluation of
+stories. We show a strong correlation between human evaluation of stories and
+those of CARP. Model outputs more significantly correlate with corresponding
+human input than those language-model based methods which utilize finetuning or
+prompt engineering approaches. We also present and analyze the Story-Critique
+Dataset, a new corpora composed of 1.3 million aligned story-critique pairs
+derived from over 80,000 stories. We expect this corpus to be of interest to
+NLP researchers.",2021-10-06
+A Plug-and-Play Method for Controlled Text Generation,2021-09-20 17:27:03+00:00,http://arxiv.org/abs/2109.09707v1,"Damian Pascual, Beni Egressy, Clara Meister, Ryan Cotterell, Roger Wattenhofer","cs.CL, cs.AI",story,"Large pre-trained language models have repeatedly shown their ability to
+produce fluent text. Yet even when starting from a prompt, generation can
+continue in many plausible directions. Current decoding methods with the goal
+of controlling generation, e.g., to ensure specific words are included, either
+require additional models or fine-tuning, or work poorly when the task at hand
+is semantically unconstrained, e.g., story generation. In this work, we present
+a plug-and-play decoding method for controlled language generation that is so
+simple and intuitive, it can be described in a single sentence: given a topic
+or keyword, we add a shift to the probability distribution over our vocabulary
+towards semantically similar words. We show how annealing this distribution can
+be used to impose hard constraints on language generation, something no other
+plug-and-play method is currently able to do with SOTA language generators.
+Despite the simplicity of this approach, we see it works incredibly well in
+practice: decoding from GPT-2 leads to diverse and fluent sentences while
+guaranteeing the appearance of given guide words. We perform two user studies,
+revealing that (1) our method outperforms competing methods in human
+evaluations; and (2) forcing the guide words to appear in the generated text
+has no impact on the fluency of the generated text.",2021-09-20
+TVRecap: A Dataset for Generating Stories with Character Descriptions,2021-09-18 05:02:29+00:00,http://arxiv.org/abs/2109.08833v1,"Mingda Chen, Kevin Gimpel",cs.CL,story,"We introduce TVRecap, a story generation dataset that requires generating
+detailed TV show episode recaps from a brief summary and a set of documents
+describing the characters involved. Unlike other story generation datasets,
+TVRecap contains stories that are authored by professional screenwriters and
+that feature complex interactions among multiple characters. Generating stories
+in TVRecap requires drawing relevant information from the lengthy provided
+documents about characters based on the brief summary. In addition, by swapping
+the input and output, TVRecap can serve as a challenging testbed for
+abstractive summarization. We create TVRecap from fan-contributed websites,
+which allows us to collect 26k episode recaps with 1868.7 tokens on average.
+Empirically, we take a hierarchical story generation approach and find that the
+neural model that uses oracle content selectors for character descriptions
+demonstrates the best performance on automatic metrics, showing the potential
+of our dataset to inspire future research on story generation with constraints.
+Qualitative analysis shows that the best-performing model sometimes generates
+content that is unfaithful to the short summaries, suggesting promising
+directions for future work.",2021-09-18
+"The Perils of Using Mechanical Turk to Evaluate Open-Ended Text
+  Generation",2021-09-14 17:20:30+00:00,http://arxiv.org/abs/2109.06835v1,"Marzena Karpinska, Nader Akoury, Mohit Iyyer",cs.CL,story,"Recent text generation research has increasingly focused on open-ended
+domains such as story and poetry generation. Because models built for such
+tasks are difficult to evaluate automatically, most researchers in the space
+justify their modeling choices by collecting crowdsourced human judgments of
+text quality (e.g., Likert scores of coherence or grammaticality) from Amazon
+Mechanical Turk (AMT). In this paper, we first conduct a survey of 45
+open-ended text generation papers and find that the vast majority of them fail
+to report crucial details about their AMT tasks, hindering reproducibility. We
+then run a series of story evaluation experiments with both AMT workers and
+English teachers and discover that even with strict qualification filters, AMT
+workers (unlike teachers) fail to distinguish between model-generated text and
+human-generated references. We show that AMT worker judgments improve when they
+are shown model-generated output alongside human-generated references, which
+enables the workers to better calibrate their ratings. Finally, interviews with
+the English teachers provide deeper insights into the challenges of the
+evaluation process, particularly when rating model-generated text.",2021-09-14
+A Temporal Variational Model for Story Generation,2021-09-14 16:36:12+00:00,http://arxiv.org/abs/2109.06807v1,"David Wilmot, Frank Keller","cs.CL, cs.AI",story,"Recent language models can generate interesting and grammatically correct
+text in story generation but often lack plot development and long-term
+coherence. This paper experiments with a latent vector planning approach based
+on a TD-VAE (Temporal Difference Variational Autoencoder), using the model for
+conditioning and reranking for text generation. The results demonstrate strong
+performance in automatic cloze and swapping evaluations. The human judgments
+show stories generated with TD-VAE reranking improve on a GPT-2 medium baseline
+and show comparable performance to a hierarchical LSTM reranking model.
+Conditioning on the latent vectors proves disappointing and deteriorates
+performance in human evaluation because it reduces the diversity of generation,
+and the models don't learn to progress the narrative. This highlights an
+important difference between technical task performance (e.g. cloze) and
+generating interesting stories.",2021-09-14
+"Implicit Premise Generation with Discourse-aware Commonsense Knowledge
+  Models",2021-09-11 19:54:39+00:00,http://arxiv.org/abs/2109.05358v1,"Tuhin Chakrabarty, Aadit Trivedi, Smaranda Muresan",cs.CL,story,"Enthymemes are defined as arguments where a premise or conclusion is left
+implicit. We tackle the task of generating the implicit premise in an
+enthymeme, which requires not only an understanding of the stated conclusion
+and premise but also additional inferences that could depend on commonsense
+knowledge. The largest available dataset for enthymemes (Habernal et al., 2018)
+consists of 1.7k samples, which is not large enough to train a neural text
+generation model. To address this issue, we take advantage of a similar task
+and dataset: Abductive reasoning in narrative text (Bhagavatula et al., 2020).
+However, we show that simply using a state-of-the-art seq2seq model fine-tuned
+on this data might not generate meaningful implicit premises associated with
+the given enthymemes. We demonstrate that encoding discourse-aware commonsense
+during fine-tuning improves the quality of the generated implicit premises and
+outperforms all other baselines both in automatic and human evaluations on
+three different datasets.",2021-09-11
+"Using BERT Encoding and Sentence-Level Language Model for Sentence
+  Ordering",2021-08-24 23:03:36+00:00,http://arxiv.org/abs/2108.10986v1,"Melika Golestani, Seyedeh Zahra Razavi, Zeinab Borhanifard, Farnaz Tahmasebian, Hesham Faili",cs.CL,story,"Discovering the logical sequence of events is one of the cornerstones in
+Natural Language Understanding. One approach to learn the sequence of events is
+to study the order of sentences in a coherent text. Sentence ordering can be
+applied in various tasks such as retrieval-based Question Answering, document
+summarization, storytelling, text generation, and dialogue systems.
+Furthermore, we can learn to model text coherence by learning how to order a
+set of shuffled sentences. Previous research has relied on RNN, LSTM, and
+BiLSTM architecture for learning text language models. However, these networks
+have performed poorly due to the lack of attention mechanisms. We propose an
+algorithm for sentence ordering in a corpus of short stories. Our proposed
+method uses a language model based on Universal Transformers (UT) that captures
+sentences' dependencies by employing an attention mechanism. Our method
+improves the previous state-of-the-art in terms of Perfect Match Ratio (PMR)
+score in the ROCStories dataset, a corpus of nearly 100K short human-made
+stories. The proposed model includes three components: Sentence Encoder,
+Language Model, and Sentence Arrangement with Brute Force Search. The first
+component generates sentence embeddings using SBERT-WK pre-trained model
+fine-tuned on the ROCStories data. Then a Universal Transformer network
+generates a sentence-level language model. For decoding, the network generates
+a candidate sentence as the following sentence of the current sentence. We use
+cosine similarity as a scoring function to assign scores to the candidate
+embedding and the embeddings of other sentences in the shuffled set. Then a
+Brute Force Search is employed to maximize the sum of similarities between
+pairs of consecutive sentences.",2021-08-24
+"GGP: A Graph-based Grouping Planner for Explicit Control of Long Text
+  Generation",2021-08-18 06:55:55+00:00,http://arxiv.org/abs/2108.07998v1,"Xuming Lin, Shaobo Cui, Zhongzhou Zhao, Wei Zhou, Ji Zhang, Haiqing Chen",cs.CL,story,"Existing data-driven methods can well handle short text generation. However,
+when applied to the long-text generation scenarios such as story generation or
+advertising text generation in the commercial scenario, these methods may
+generate illogical and uncontrollable texts. To address these aforementioned
+issues, we propose a graph-based grouping planner(GGP) following the idea of
+first-plan-then-generate. Specifically, given a collection of key phrases, GGP
+firstly encodes these phrases into an instance-level sequential representation
+and a corpus-level graph-based representation separately. With these two
+synergic representations, we then regroup these phrases into a fine-grained
+plan, based on which we generate the final long text. We conduct our
+experiments on three long text generation datasets and the experimental results
+reveal that GGP significantly outperforms baselines, which proves that GGP can
+control the long text generation by knowing how to say and in what order.",2021-08-18
+MTG: A Benchmarking Suite for Multilingual Text Generation,2021-08-13 13:25:08+00:00,http://arxiv.org/abs/2108.07140v1,"Yiran Chen, Zhenqiao Song, Xianze Wu, Danqing Wang, Jingjing Xu, Jiaze Chen, Hao Zhou, Lei Li",cs.CL,story,"We introduce MTG, a new benchmark suite for training and evaluating
+multilingual text generation. It is the first and largest text generation
+benchmark with 120k human-annotated multi-way parallel data for three tasks
+(story generation, question generation, and title generation) across four
+languages (English, German, French, and Spanish). Based on it, we set various
+evaluation scenarios and make a deep analysis of several popular multilingual
+generation models from different aspects. Our benchmark suite will encourage
+the multilingualism for text generation community with more human-annotated
+parallel data and more diverse generation scenarios.",2021-08-13
+Sentence Semantic Regression for Text Generation,2021-08-06 07:35:59+00:00,http://arxiv.org/abs/2108.02984v1,"Wei Wang, Piji Li, Hai-Tao Zheng",cs.CL,story,"Recall the classical text generation works, the generation framework can be
+briefly divided into two phases: \textbf{idea reasoning} and \textbf{surface
+realization}. The target of idea reasoning is to figure out the main idea which
+will be presented in the following talking/writing periods. Surface realization
+aims to arrange the most appropriate sentence to depict and convey the
+information distilled from the main idea. However, the current popular
+token-by-token text generation methods ignore this crucial process and suffer
+from many serious issues, such as idea/topic drift. To tackle the problems and
+realize this two-phase paradigm, we propose a new framework named Sentence
+Semantic Regression (\textbf{SSR}) based on sentence-level language modeling.
+For idea reasoning, two architectures \textbf{SSR-AR} and \textbf{SSR-NonAR}
+are designed to conduct sentence semantic regression autoregressively (like
+GPT2/3) and bidirectionally (like BERT). In the phase of surface realization, a
+mixed-granularity sentence decoder is designed to generate text with better
+consistency by jointly incorporating the predicted sentence-level main idea as
+well as the preceding contextual token-level information. We conduct
+experiments on four tasks of story ending prediction, story ending generation,
+dialogue generation, and sentence infilling. The results show that SSR can
+obtain better performance in terms of automatic metrics and human evaluation.",2021-08-06
+"Inspiration through Observation: Demonstrating the Influence of
+  Automatically Generated Text on Creative Writing",2021-07-08 17:53:22+00:00,http://arxiv.org/abs/2107.04007v1,Melissa Roemmele,"cs.CL, cs.AI, cs.HC",story,"Getting machines to generate text perceived as creative is a long-pursued
+goal. A growing body of research directs this goal towards augmenting the
+creative writing abilities of human authors. In this paper, we pursue this
+objective by analyzing how observing examples of automatically generated text
+influences writing. In particular, we examine a task referred to as sentence
+infilling, which involves transforming a list of words into a complete
+sentence. We emphasize ""storiability"" as a desirable feature of the resulting
+sentences, where ""storiable"" sentences are those that suggest a story a reader
+would be curious to hear about. Both humans and an automated system (based on a
+neural language model) performed this sentence infilling task. In one setting,
+people wrote sentences on their own; in a different setting, people observed
+the sentences produced by the model while writing their own sentences. Readers
+then assigned storiability preferences to the resulting sentences in a
+subsequent evaluation. We find that human-authored sentences were judged as
+more storiable when authors observed the generated examples, and that
+storiability increased as authors derived more semantic content from the
+examples. This result gives evidence of an ""inspiration through observation""
+paradigm for human-computer collaborative writing, through which human writing
+can be enhanced by text generation models without directly copying their
+output.",2021-07-08
+"Improving Coherence and Consistency in Neural Sequence Models with
+  Dual-System, Neuro-Symbolic Reasoning",2021-07-06 17:59:49+00:00,http://arxiv.org/abs/2107.02794v1,"Maxwell Nye, Michael Henry Tessler, Joshua B. Tenenbaum, Brenden M. Lake","cs.AI, cs.CL, cs.LG",story,"Human reasoning can often be understood as an interplay between two systems:
+the intuitive and associative (""System 1"") and the deliberative and logical
+(""System 2""). Neural sequence models -- which have been increasingly successful
+at performing complex, structured tasks -- exhibit the advantages and failure
+modes of System 1: they are fast and learn patterns from data, but are often
+inconsistent and incoherent. In this work, we seek a lightweight, training-free
+means of improving existing System 1-like sequence models by adding System
+2-inspired logical reasoning. We explore several variations on this theme in
+which candidate generations from a neural sequence model are examined for
+logical consistency by a symbolic reasoning module, which can either accept or
+reject the generations. Our approach uses neural inference to mediate between
+the neural System 1 and the logical System 2. Results in robust story
+generation and grounded instruction-following show that this approach can
+increase the coherence and accuracy of neurally-based generations.",2021-07-06
+Scarecrow: A Framework for Scrutinizing Machine Text,2021-07-02 22:37:03+00:00,http://arxiv.org/abs/2107.01294v2,"Yao Dou, Maxwell Forbes, Rik Koncel-Kedziorski, Noah A. Smith, Yejin Choi",cs.CL,story,"Modern neural text generation systems can produce remarkably fluent and
+grammatical texts. While earlier language models suffered from repetition and
+syntactic errors, the errors made by contemporary models are often semantic,
+narrative, or discourse failures.
+  To facilitate research of these complex error types, we introduce a new
+structured, crowdsourced error annotation schema called Scarecrow. The error
+categories used in Scarecrow -- such as redundancy, commonsense errors, and
+incoherence -- were identified by combining expert analysis with several pilot
+rounds of ontology-free crowd annotation to arrive at a schema which covers the
+error phenomena found in real machine generated text.
+  We use Scarecrow to collect 13k annotations of 1.3k human and machine
+generate paragraphs of English language news text, amounting to over 41k spans
+each labeled with its error category, severity, a natural language explanation,
+and antecedent span (where relevant). We collect annotations for text generated
+by state-of-the-art systems with varying known performance levels, from GPT-2
+Small through the largest GPT-3. We isolate several factors for detailed
+analysis, including parameter count, training data, and decoding technique. Our
+results show both expected and surprising differences across these settings.
+These findings demonstrate the value of Scarecrow annotations in the assessment
+of current and future text generation systems. We release our complete
+annotation toolkit and dataset at https://yao-dou.github.io/scarecrow/.",2021-07-02
+"All That's 'Human' Is Not Gold: Evaluating Human Evaluation of Generated
+  Text",2021-06-30 19:00:25+00:00,http://arxiv.org/abs/2107.00061v1,"Elizabeth Clark, Tal August, Sofia Serrano, Nikita Haduong, Suchin Gururangan, Noah A. Smith",cs.CL,story,"Human evaluations are typically considered the gold standard in natural
+language generation, but as models' fluency improves, how well can evaluators
+detect and judge machine-generated text? We run a study assessing non-experts'
+ability to distinguish between human- and machine-authored text (GPT2 and GPT3)
+in three domains (stories, news articles, and recipes). We find that, without
+training, evaluators distinguished between GPT3- and human-authored text at
+random chance level. We explore three approaches for quickly training
+evaluators to better identify GPT3-authored text (detailed instructions,
+annotated examples, and paired examples) and find that while evaluators'
+accuracy improved up to 55%, it did not significantly improve across the three
+domains. Given the inconsistent results across text domains and the often
+contradictory reasons evaluators gave for their judgments, we examine the role
+untrained human evaluations play in NLG evaluation and provide recommendations
+to NLG researchers for improving human evaluations of text generated from
+state-of-the-art models.",2021-06-30
+"Graph-based Trajectory Visualization for Text Mining of COVID-19
+  Biomedical Literature",2021-06-07 06:01:17+00:00,http://arxiv.org/abs/2106.07374v1,"Yeseul Jeon, Dongjun Chung, Jina Park, Ick Hoon Jin","cs.IR, stat.AP",story,"Since the emergence of the worldwide pandemic of COVID-19, relevant research
+has been published at a dazzling pace, which makes it hard to follow the
+research in this area without dedicated efforts. It is practically impossible
+to implement this task manually due to the high volume of the relevant
+literature. Text mining has been considered to be a powerful approach to
+address this challenge, especially the topic modeling, a well-known
+unsupervised method that aims to reveal latent topics from the literature.
+However, in spite of its potential utility, the results generated from this
+approach are often investigated manually. Hence, its application to the
+COVID-19 literature is not straightforward and expert knowledge is needed to
+make meaningful interpretations. In order to address these challenges, we
+propose a novel analytical framework for effective visualization and mining of
+topic modeling results. Here we assumed that topics constituting a paper can be
+positioned on an interaction map, which belongs to a high-dimensional Euclidean
+space. Based on this assumption, after summarizing topics with their topic-word
+distributions using the biterm topic model, we mapped these latent topics on
+networks to visualize relationships among the topics. Moreover, in the proposed
+approach, the change of relationships among topics can be traced using a
+trajectory plot generated with different levels of word richness. These results
+together provide a deeply mined and intuitive representation of relationships
+among topics related to a specific research area. The application of this
+proposed framework to the PubMed literature shows that our approach facilitates
+understanding of the topics constituting the COVID-19 knowledge.",2021-06-07
+"Long Text Generation by Modeling Sentence-Level and Discourse-Level
+  Coherence",2021-05-19 07:29:08+00:00,http://arxiv.org/abs/2105.08963v1,"Jian Guan, Xiaoxi Mao, Changjie Fan, Zitao Liu, Wenbiao Ding, Minlie Huang",cs.CL,story,"Generating long and coherent text is an important but challenging task,
+particularly for open-ended language generation tasks such as story generation.
+Despite the success in modeling intra-sentence coherence, existing generation
+models (e.g., BART) still struggle to maintain a coherent event sequence
+throughout the generated text. We conjecture that this is because of the
+difficulty for the decoder to capture the high-level semantics and discourse
+structures in the context beyond token-level co-occurrence. In this paper, we
+propose a long text generation model, which can represent the prefix sentences
+at sentence level and discourse level in the decoding process. To this end, we
+propose two pretraining objectives to learn the representations by predicting
+inter-sentence semantic similarity and distinguishing between normal and
+shuffled sentence orders. Extensive experiments show that our model can
+generate more coherent texts than state-of-the-art baselines.",2021-05-19
+OpenMEVA: A Benchmark for Evaluating Open-ended Story Generation Metrics,2021-05-19 04:45:07+00:00,http://arxiv.org/abs/2105.08920v1,"Jian Guan, Zhexin Zhang, Zhuoer Feng, Zitao Liu, Wenbiao Ding, Xiaoxi Mao, Changjie Fan, Minlie Huang",cs.CL,story,"Automatic metrics are essential for developing natural language generation
+(NLG) models, particularly for open-ended language generation tasks such as
+story generation. However, existing automatic metrics are observed to correlate
+poorly with human evaluation. The lack of standardized benchmark datasets makes
+it difficult to fully evaluate the capabilities of a metric and fairly compare
+different metrics. Therefore, we propose OpenMEVA, a benchmark for evaluating
+open-ended story generation metrics. OpenMEVA provides a comprehensive test
+suite to assess the capabilities of metrics, including (a) the correlation with
+human judgments, (b) the generalization to different model outputs and
+datasets, (c) the ability to judge story coherence, and (d) the robustness to
+perturbations. To this end, OpenMEVA includes both manually annotated stories
+and auto-constructed test examples. We evaluate existing metrics on OpenMEVA
+and observe that they have poor correlation with human judgments, fail to
+recognize discourse-level incoherence, and lack inferential knowledge (e.g.,
+causal order between events), the generalization ability and robustness. Our
+study presents insights for developing NLG models and metrics in further
+research.",2021-05-19
+Stylized Story Generation with Style-Guided Planning,2021-05-18 15:55:38+00:00,http://arxiv.org/abs/2105.08625v2,"Xiangzhe Kong, Jialiang Huang, Ziquan Tung, Jian Guan, Minlie Huang","cs.CL, cs.AI",story,"Current storytelling systems focus more ongenerating stories with coherent
+plots regard-less of the narration style, which is impor-tant for controllable
+text generation. There-fore, we propose a new task, stylized story gen-eration,
+namely generating stories with speci-fied style given a leading context. To
+tacklethe problem, we propose a novel generationmodel that first plans the
+stylized keywordsand then generates the whole story with theguidance of the
+keywords. Besides, we pro-pose two automatic metrics to evaluate theconsistency
+between the generated story andthe specified style. Experiments
+demonstratesthat our model can controllably generateemo-tion-driven
+orevent-driven stories based onthe ROCStories dataset (Mostafazadeh et
+al.,2016). Our study presents insights for stylizedstory generation in further
+research.",2021-05-18
+"Inferring the Reader: Guiding Automated Story Generation with
+  Commonsense Reasoning",2021-05-04 06:40:33+00:00,http://arxiv.org/abs/2105.01311v1,"Xiangyu Peng, Siyan Li, Sarah Wiegreffe, Mark Riedl",cs.CL,story,"Transformer-based language model approaches to automated story generation
+currently provide state-of-the-art results. However, they still suffer from
+plot incoherence when generating narratives over time, and critically lack
+basic commonsense reasoning. Furthermore, existing methods generally focus only
+on single-character stories, or fail to track characters at all. To improve the
+coherence of generated narratives and to expand the scope of character-centric
+narrative generation, we introduce Commonsense-inference Augmented neural
+StoryTelling (CAST), a framework for introducing commonsense reasoning into the
+generation process while modeling the interaction between multiple characters.
+We find that our CAST method produces significantly more coherent and on-topic
+two-character stories, outperforming baselines in dimensions including plot
+plausibility and staying on topic. We also show how the CAST method can be used
+to further train language models that generate more coherent stories and reduce
+computation cost.",2021-05-04
+"Plot-guided Adversarial Example Construction for Evaluating Open-domain
+  Story Generation",2021-04-12 20:19:24+00:00,http://arxiv.org/abs/2104.05801v1,"Sarik Ghazarian, Zixi Liu, Akash SM, Ralph Weischedel, Aram Galstyan, Nanyun Peng","cs.CL, cs.LG",story,"With the recent advances of open-domain story generation, the lack of
+reliable automatic evaluation metrics becomes an increasingly imperative issue
+that hinders the fast development of story generation. According to conducted
+researches in this regard, learnable evaluation metrics have promised more
+accurate assessments by having higher correlations with human judgments. A
+critical bottleneck of obtaining a reliable learnable evaluation metric is the
+lack of high-quality training data for classifiers to efficiently distinguish
+plausible and implausible machine-generated stories. Previous works relied on
+\textit{heuristically manipulated} plausible examples to mimic possible system
+drawbacks such as repetition, contradiction, or irrelevant content in the text
+level, which can be \textit{unnatural} and \textit{oversimplify} the
+characteristics of implausible machine-generated stories. We propose to tackle
+these issues by generating a more comprehensive set of implausible stories
+using {\em plots}, which are structured representations of controllable factors
+used to generate stories. Since these plots are compact and structured, it is
+easier to manipulate them to generate text with targeted undesirable
+properties, while at the same time maintain the grammatical correctness and
+naturalness of the generated sentences. To improve the quality of generated
+implausible stories, we further apply the adversarial filtering procedure
+presented by \citet{zellers2018swag} to select a more nuanced set of
+implausible texts. Experiments show that the evaluation metrics trained on our
+generated data result in more reliable automatic assessments that correlate
+remarkably better with human judgments compared to the baselines.",2021-04-12
+Semantic Frame Forecast,2021-04-12 16:23:17+00:00,http://arxiv.org/abs/2104.05604v1,"Chieh-Yang Huang, Ting-Hao 'Kenneth' Huang",cs.CL,story,"This paper introduces semantic frame forecast, a task that predicts the
+semantic frames that will occur in the next 10, 100, or even 1,000 sentences in
+a running story. Prior work focused on predicting the immediate future of a
+story, such as one to a few sentences ahead. However, when novelists write long
+stories, generating a few sentences is not enough to help them gain high-level
+insight to develop the follow-up story. In this paper, we formulate a long
+story as a sequence of ""story blocks,"" where each block contains a fixed number
+of sentences (e.g., 10, 100, or 200). This formulation allows us to predict the
+follow-up story arc beyond the scope of a few sentences. We represent a story
+block using the term frequencies (TF) of semantic frames in it, normalized by
+each frame's inverse document frequency (IDF). We conduct semantic frame
+forecast experiments on 4,794 books from the Bookcorpus and 7,962 scientific
+abstracts from CODA-19, with block sizes ranging from 5 to 1,000 sentences. The
+results show that automated models can forecast the follow-up story blocks
+better than the random, prior, and replay baselines, indicating the task's
+feasibility. We also learn that the models using the frame representation as
+features outperform all the existing approaches when the block size is over 150
+sentences. The human evaluation also shows that the proposed frame
+representation, when visualized as word clouds, is comprehensible,
+representative, and specific to humans. Our code is available at
+https://github.com/appleternity/FrameForecasting.",2021-04-12
+Sketch and Customize: A Counterfactual Story Generator,2021-04-02 08:14:22+00:00,http://arxiv.org/abs/2104.00929v1,"Changying Hao, Liang Pang, Yanyan Lan, Yan Wang, Jiafeng Guo, Xueqi Cheng","cs.CL, cs.AI",story,"Recent text generation models are easy to generate relevant and fluent text
+for the given text, while lack of causal reasoning ability when we change some
+parts of the given text. Counterfactual story rewriting is a recently proposed
+task to test the causal reasoning ability for text generation models, which
+requires a model to predict the corresponding story ending when the condition
+is modified to a counterfactual one. Previous works have shown that the
+traditional sequence-to-sequence model cannot well handle this problem, as it
+often captures some spurious correlations between the original and
+counterfactual endings, instead of the causal relations between conditions and
+endings. To address this issue, we propose a sketch-and-customize generation
+model guided by the causality implicated in the conditions and endings. In the
+sketch stage, a skeleton is extracted by removing words which are conflict to
+the counterfactual condition, from the original ending. In the customize stage,
+a generation model is used to fill proper words in the skeleton under the
+guidance of the counterfactual condition. In this way, the obtained
+counterfactual ending is both relevant to the original ending and consistent
+with the counterfactual condition. Experimental results show that the proposed
+model generates much better endings, as compared with the traditional
+sequence-to-sequence model.",2021-04-02
+AfriKI: Machine-in-the-Loop Afrikaans Poetry Generation,2021-03-30 09:17:56+00:00,http://arxiv.org/abs/2103.16190v1,"Imke van Heerden, Anil Bas","cs.CL, cs.LG",story,"This paper proposes a generative language model called AfriKI. Our approach
+is based on an LSTM architecture trained on a small corpus of contemporary
+fiction. With the aim of promoting human creativity, we use the model as an
+authoring tool to explore machine-in-the-loop Afrikaans poetry generation. To
+our knowledge, this is the first study to attempt creative text generation in
+Afrikaans.",2021-03-30
+Automatic Story Generation: Challenges and Attempts,2021-02-25 02:03:35+00:00,http://arxiv.org/abs/2102.12634v1,"Amal Alabdulkarim, Siyan Li, Xiangyu Peng",cs.CL,story,"The scope of this survey paper is to explore the challenges in automatic
+story generation. We hope to contribute in the following ways: 1. Explore how
+previous research in story generation addressed those challenges. 2. Discuss
+future research directions and new technologies that may aid more advancements.
+3. Shed light on emerging and often overlooked challenges such as creativity
+and discourse.",2021-02-25
+"On Efficient Training, Controllability and Compositional Generalization
+  of Insertion-based Language Generators",2021-02-12 11:05:02+00:00,http://arxiv.org/abs/2102.11008v1,"Sidi Lu, Nanyun Peng",cs.CL,story,"Auto-regressive language models with the left-to-right generation order have
+been a predominant paradigm for language generation. Recently, out-of-order
+text generation beyond the traditional left-to-right paradigm has attracted
+extensive attention, with a notable variation of insertion-based generation,
+where a model is used to gradually extend the context into a complete sentence
+purely with insertion operations. However, since insertion operations disturb
+the position information of each token, it is often believed that each step of
+the insertion-based likelihood estimation requires a bi-directional
+\textit{re-encoding} of the whole generated sequence. This computational
+overhead prohibits the model from scaling up to generate long, diverse texts
+such as stories, news articles, and reports. To address this issue, we propose
+InsNet, an insertion-based sequence model that can be trained as efficiently as
+traditional transformer decoders while maintaining the same performance as that
+with a bi-directional context encoder. We evaluate InsNet on story generation
+and CleVR-CoGENT captioning, showing the advantages of InsNet in several
+dimensions, including computational costs, generation quality, the ability to
+perfectly incorporate lexical controls, and better compositional
+generalization.",2021-02-12
+GraphPlan: Story Generation by Planning with Event Graph,2021-02-05 03:18:55+00:00,http://arxiv.org/abs/2102.02977v1,"Hong Chen, Raphael Shu, Hiroya Takamura, Hideki Nakayama",cs.CL,story,"Story generation is a task that aims to automatically produce multiple
+sentences to make up a meaningful story. This task is challenging because it
+requires high-level understanding of semantic meaning of sentences and
+causality of story events. Naive sequence-to-sequence models generally fail to
+acquire such knowledge, as the logical correctness can hardly be guaranteed in
+a text generation model without the strategic planning. In this paper, we focus
+on planning a sequence of events assisted by event graphs, and use the events
+to guide the generator. Instead of using a sequence-to-sequence model to output
+a storyline as in some existing works, we propose to generate an event sequence
+by walking on an event graph. The event graphs are built automatically based on
+the corpus. To evaluate the proposed approach, we conduct human evaluation both
+on event planning and story generation. Based on large-scale human annotation
+results, our proposed approach is shown to produce more logically correct event
+sequences and stories.",2021-02-05
+"MAUVE: Human-Machine Divergence Curves for Evaluating Open-Ended Text
+  Generation",2021-02-02 11:59:28+00:00,http://arxiv.org/abs/2102.01454v1,"Krishna Pillutla, Swabha Swayamdipta, Rowan Zellers, John Thickstun, Yejin Choi, Zaid Harchaoui",cs.CL,story,"Despite major advances in open-ended text generation, there has been limited
+progress in designing evaluation metrics for this task. We propose MAUVE -- a
+metric for open-ended text generation, which directly compares the distribution
+of machine-generated text to that of human language. MAUVE measures the mean
+area under the divergence curve for the two distributions, exploring the
+trade-off between two types of errors: those arising from parts of the human
+distribution that the model distribution approximates well, and those it does
+not. We present experiments across two open-ended generation tasks in the web
+text domain and the story domain, and a variety of decoding algorithms and
+model sizes. Our results show that evaluation under MAUVE indeed reflects the
+more natural behavior with respect to model size, compared to prior metrics.
+MAUVE's ordering of the decoding algorithms also agrees with that of generation
+perplexity, the most widely used metric in open-ended text generation; however,
+MAUVE presents a more principled evaluation metric for the task as it considers
+both model and human text.",2021-02-02
+Persistent Anti-Muslim Bias in Large Language Models,2021-01-14 18:41:55+00:00,http://arxiv.org/abs/2101.05783v2,"Abubakar Abid, Maheen Farooqi, James Zou","cs.CL, cs.LG",story,"It has been observed that large-scale language models capture undesirable
+societal biases, e.g. relating to race and gender; yet religious bias has been
+relatively unexplored. We demonstrate that GPT-3, a state-of-the-art contextual
+language model, captures persistent Muslim-violence bias. We probe GPT-3 in
+various ways, including prompt completion, analogical reasoning, and story
+generation, to understand this anti-Muslim bias, demonstrating that it appears
+consistently and creatively in different uses of the model and that it is
+severe even compared to biases about other religious groups. For instance,
+""Muslim"" is analogized to ""terrorist"" in 23% of test cases, while ""Jewish"" is
+mapped to ""money"" in 5% of test cases. We quantify the positive distraction
+needed to overcome this bias with adversarial text prompts, and find that use
+of the most positive 6 adjectives reduces violent completions for ""Muslims""
+from 66% to 20%, but which is still higher than for other religious groups.",2021-01-14
+"Political Depolarization of News Articles Using Attribute-aware Word
+  Embeddings",2021-01-05 07:39:12+00:00,http://arxiv.org/abs/2101.01391v1,"Ruibo Liu, Lili Wang, Chenyan Jia, Soroush Vosoughi","cs.CL, cs.AI",story,"Political polarization in the US is on the rise. This polarization negatively
+affects the public sphere by contributing to the creation of ideological echo
+chambers. In this paper, we focus on addressing one of the factors that
+contributes to this polarity, polarized media. We introduce a framework for
+depolarizing news articles. Given an article on a certain topic with a
+particular ideological slant (eg., liberal or conservative), the framework
+first detects polar language in the article and then generates a new article
+with the polar language replaced with neutral expressions. To detect polar
+words, we train a multi-attribute-aware word embedding model that is aware of
+ideology and topics on 360k full-length media articles. Then, for text
+generation, we propose a new algorithm called Text Annealing Depolarization
+Algorithm (TADA). TADA retrieves neutral expressions from the word embedding
+model that not only decrease ideological polarity but also preserve the
+original argument of the text, while maintaining grammatical correctness. We
+evaluate our framework by comparing the depolarized output of our model in two
+modes, fully-automatic and semi-automatic, on 99 stories spanning 11 topics.
+Based on feedback from 161 human testers, our framework successfully
+depolarized 90.1% of paragraphs in semi-automatic mode and 78.3% of paragraphs
+in fully-automatic mode. Furthermore, 81.2% of the testers agree that the
+non-polar content information is well-preserved and 79% agree that
+depolarization does not harm semantic correctness when they compare the
+original text and the depolarized text. Our work shows that data-driven methods
+can help to locate political polarity and aid in the depolarization of
+articles.",2021-01-05
+"Outline to Story: Fine-grained Controllable Story Generation from
+  Cascaded Events",2021-01-04 08:16:21+00:00,http://arxiv.org/abs/2101.00822v1,"Le Fang, Tao Zeng, Chaochun Liu, Liefeng Bo, Wen Dong, Changyou Chen","cs.CL, cs.AI, cs.LG",story,"Large-scale pretrained language models have shown thrilling generation
+capabilities, especially when they generate consistent long text in thousands
+of words with ease. However, users of these models can only control the prefix
+of sentences or certain global aspects of generated text. It is challenging to
+simultaneously achieve fine-grained controllability and preserve the
+state-of-the-art unconditional text generation capability. In this paper, we
+first propose a new task named ""Outline to Story"" (O2S) as a test bed for
+fine-grained controllable generation of long text, which generates a
+multi-paragraph story from cascaded events, i.e. a sequence of outline events
+that guide subsequent paragraph generation. We then create dedicate datasets
+for future benchmarks, built by state-of-the-art keyword extraction techniques.
+Finally, we propose an extremely simple yet strong baseline method for the O2S
+task, which fine tunes pre-trained language models on augmented sequences of
+outline-story pairs with simple language modeling objective. Our method does
+not introduce any new parameters or perform any architecture modification,
+except several special tokens as delimiters to build augmented sequences.
+Extensive experiments on various datasets demonstrate state-of-the-art
+conditional story generation performance with our model, achieving better
+fine-grained controllability and user flexibility. Our paper is among the first
+ones by our knowledge to propose a model and to create datasets for the task of
+""outline to story"". Our work also instantiates research interest of
+fine-grained controllable generation of open-domain long text, where
+controlling inputs are represented by short text.",2021-01-04
+Facts2Story: Controlling Text Generation by Key Facts,2020-12-08 10:14:29+00:00,http://arxiv.org/abs/2012.04332v1,"Eyal Orbach, Yoav Goldberg",cs.CL,story,"Recent advancements in self-attention neural network architectures have
+raised the bar for open-ended text generation. Yet, while current methods are
+capable of producing a coherent text which is several hundred words long,
+attaining control over the content that is being generated -- as well as
+evaluating it -- are still open questions. We propose a controlled generation
+task which is based on expanding a sequence of facts, expressed in natural
+language, into a longer narrative. We introduce human-based evaluation metrics
+for this task, as well as a method for deriving a large training dataset. We
+evaluate three methods on this task, based on fine-tuning pre-trained models.
+We show that while auto-regressive, unidirectional Language Models such as GPT2
+produce better fluency, they struggle to adhere to the requested facts. We
+propose a plan-and-cloze model (using fine-tuned XLNet) which produces
+competitive fluency while adhering to the requested content.",2020-12-08
+Machine Generation and Detection of Arabic Manipulated and Fake News,2020-11-05 20:50:22+00:00,http://arxiv.org/abs/2011.03092v1,"El Moatez Billah Nagoudi, AbdelRahim Elmadany, Muhammad Abdul-Mageed, Tariq Alhindi, Hasan Cavusoglu","cs.CL, cs.LG",story,"Fake news and deceptive machine-generated text are serious problems
+threatening modern societies, including in the Arab world. This motivates work
+on detecting false and manipulated stories online. However, a bottleneck for
+this research is lack of sufficient data to train detection models. We present
+a novel method for automatically generating Arabic manipulated (and potentially
+fake) news stories. Our method is simple and only depends on availability of
+true stories, which are abundant online, and a part of speech tagger (POS). To
+facilitate future work, we dispense with both of these requirements altogether
+by providing AraNews, a novel and large POS-tagged news dataset that can be
+used off-the-shelf. Using stories generated based on AraNews, we carry out a
+human annotation study that casts light on the effects of machine manipulation
+on text veracity. The study also measures human ability to detect Arabic
+machine manipulated text generated by our method. Finally, we develop the first
+models for detecting manipulated Arabic news and achieve state-of-the-art
+results on Arabic fake news detection (macro F1=70.06). Our models and data are
+publicly available.",2020-11-05
+Dissecting the components and factors of Neural Text Generation,2020-10-14 17:54:42+00:00,http://arxiv.org/abs/2010.07279v1,"Khyathi Raghavi Chandu, Alan W Black",cs.CL,story,"Neural text generation metamorphosed into several critical natural language
+applications ranging from text completion to free form narrative generation.
+Generating natural language has fundamentally been a human attribute and the
+advent of ubiquitous NLP applications and virtual agents marks the need to
+impart this skill to machines. There has been a colossal research effort in
+various frontiers of neural text generation including machine translation,
+summarization, image captioning, storytelling etc., We believe that this is an
+excellent juncture to retrospect on the directions of the field. Specifically,
+this paper surveys the fundamental factors and components relaying task
+agnostic impacts across various generation tasks such as storytelling,
+summarization, translation etc., In specific, we present an abstraction of the
+imperative techniques with respect to learning paradigms, pretraining, modeling
+approaches, decoding and the key challenges. Thereby, we hope to deliver a
+one-stop destination for researchers in the field to facilitate a perspective
+on where to situate their work and how it impacts other closely related tasks.",2020-10-14
+"Back to the Future: Unsupervised Backprop-based Decoding for
+  Counterfactual and Abductive Commonsense Reasoning",2020-10-12 17:58:43+00:00,http://arxiv.org/abs/2010.05906v3,"Lianhui Qin, Vered Shwartz, Peter West, Chandra Bhagavatula, Jena Hwang, Ronan Le Bras, Antoine Bosselut, Yejin Choi","cs.CL, cs.AI, cs.LG",story,"Abductive and counterfactual reasoning, core abilities of everyday human
+cognition, require reasoning about what might have happened at time t, while
+conditioning on multiple contexts from the relative past and future. However,
+simultaneous incorporation of past and future contexts using generative
+language models (LMs) can be challenging, as they are trained either to
+condition only on the past context or to perform narrowly scoped
+text-infilling. In this paper, we propose DeLorean, a new unsupervised decoding
+algorithm that can flexibly incorporate both the past and future contexts using
+only off-the-shelf, left-to-right language models and no supervision. The key
+intuition of our algorithm is incorporating the future through
+back-propagation, during which, we only update the internal representation of
+the output while fixing the model parameters. By alternating between forward
+and backward propagation, DeLorean can decode the output representation that
+reflects both the left and right contexts. We demonstrate that our approach is
+general and applicable to two nonmonotonic reasoning tasks: abductive text
+generation and counterfactual story revision, where DeLorean outperforms a
+range of unsupervised and some supervised methods, based on automatic and human
+evaluation.",2020-10-12
+Controllable Multi-Character Psychology-Oriented Story Generation,2020-10-11 12:05:00+00:00,http://arxiv.org/abs/2010.05230v1,"Feifei Xu, Xinpeng Wang, Yunpu Ma, Volker Tresp, Yuyi Wang, Shanlin Zhou, Haizhou Du",cs.CL,story,"Story generation, which aims to generate a long and coherent story
+automatically based on the title or an input sentence, is an important research
+area in the field of natural language generation. There is relatively little
+work on story generation with appointed emotions. Most existing works focus on
+using only one specific emotion to control the generation of a whole story and
+ignore the emotional changes in the characters in the course of the story. In
+our work, we aim to design an emotional line for each character that considers
+multiple emotions common in psychological theories, with the goal of generating
+stories with richer emotional changes in the characters. To the best of our
+knowledge, this work is first to focuses on characters' emotional lines in
+story generation. We present a novel model-based attention mechanism that we
+call SoCP (Storytelling of multi-Character Psychology). We show that the
+proposed model can generate stories considering the changes in the
+psychological state of different characters. To take into account the
+particularity of the model, in addition to commonly used evaluation
+indicators(BLEU, ROUGE, etc.), we introduce the accuracy rate of psychological
+state control as a novel evaluation metric. The new indicator reflects the
+effect of the model on the psychological state control of story characters.
+Experiments show that with SoCP, the generated stories follow the psychological
+state for each character according to both automatic and human evaluations.",2020-10-11
+"MEGATRON-CNTRL: Controllable Story Generation with External Knowledge
+  Using Large-Scale Language Models",2020-10-02 08:07:12+00:00,http://arxiv.org/abs/2010.00840v1,"Peng Xu, Mostofa Patwary, Mohammad Shoeybi, Raul Puri, Pascale Fung, Anima Anandkumar, Bryan Catanzaro",cs.CL,story,"Existing pre-trained large language models have shown unparalleled generative
+capabilities. However, they are not controllable. In this paper, we propose
+MEGATRON-CNTRL, a novel framework that uses large-scale language models and
+adds control to text generation by incorporating an external knowledge base.
+Our framework consists of a keyword predictor, a knowledge retriever, a
+contextual knowledge ranker, and a conditional text generator. As we do not
+have access to ground-truth supervision for the knowledge ranker, we make use
+of weak supervision from sentence embedding. The empirical results show that
+our model generates more fluent, consistent, and coherent stories with less
+repetition and higher diversity compared to prior work on the ROC story
+dataset. We showcase the controllability of our model by replacing the keywords
+used to generate stories and re-running the generation process. Human
+evaluation results show that 77.5% of these stories are successfully controlled
+by the new keywords. Furthermore, by scaling our model from 124 million to 8.3
+billion parameters we demonstrate that larger models improve both the quality
+of generation (from 74.5% to 93.0% for consistency) and controllability (from
+77.5% to 91.5%).",2020-10-02
+Graph-based Multi-hop Reasoning for Long Text Generation,2020-09-28 12:47:59+00:00,http://arxiv.org/abs/2009.13282v1,"Liang Zhao, Jingjing Xu, Junyang Lin, Yichang Zhang, Hongxia Yang, Xu Sun",cs.CL,story,"Long text generation is an important but challenging task.The main problem
+lies in learning sentence-level semantic dependencies which traditional
+generative models often suffer from. To address this problem, we propose a
+Multi-hop Reasoning Generation (MRG) approach that incorporates multi-hop
+reasoning over a knowledge graph to learn semantic dependencies among
+sentences. MRG consists of twoparts, a graph-based multi-hop reasoning module
+and a path-aware sentence realization module. The reasoning module is
+responsible for searching skeleton paths from a knowledge graph to imitate the
+imagination process in the human writing for semantic transfer. Based on the
+inferred paths, the sentence realization module then generates a complete
+sentence. Unlike previous black-box models, MRG explicitly infers the skeleton
+path, which provides explanatory views tounderstand how the proposed model
+works. We conduct experiments on three representative tasks, including story
+generation, review generation, and product description generation. Automatic
+and manual evaluation show that our proposed method can generate more
+informative and coherentlong text than strong baselines, such as pre-trained
+models(e.g. GPT-2) and knowledge-enhanced models.",2020-09-28
+Content Planning for Neural Story Generation with Aristotelian Rescoring,2020-09-21 13:41:32+00:00,http://arxiv.org/abs/2009.09870v2,"Seraphina Goldfarb-Tarrant, Tuhin Chakrabarty, Ralph Weischedel, Nanyun Peng","cs.CL, cs.AI",story,"Long-form narrative text generated from large language models manages a
+fluent impersonation of human writing, but only at the local sentence level,
+and lacks structure or global cohesion. We posit that many of the problems of
+story generation can be addressed via high-quality content planning, and
+present a system that focuses on how to learn good plot structures to guide
+story generation. We utilize a plot-generation language model along with an
+ensemble of rescoring models that each implement an aspect of good
+story-writing as detailed in Aristotle's Poetics. We find that stories written
+with our more principled plot-structure are both more relevant to a given
+prompt and higher quality than baselines that do not content plan, or that plan
+in an unprincipled way.",2020-09-21
+UNION: An Unreferenced Metric for Evaluating Open-ended Story Generation,2020-09-16 11:01:46+00:00,http://arxiv.org/abs/2009.07602v1,"Jian Guan, Minlie Huang",cs.CL,story,"Despite the success of existing referenced metrics (e.g., BLEU and
+MoverScore), they correlate poorly with human judgments for open-ended text
+generation including story or dialog generation because of the notorious
+one-to-many issue: there are many plausible outputs for the same input, which
+may differ substantially in literal or semantics from the limited number of
+given references. To alleviate this issue, we propose UNION, a learnable
+unreferenced metric for evaluating open-ended story generation, which measures
+the quality of a generated story without any reference. Built on top of BERT,
+UNION is trained to distinguish human-written stories from negative samples and
+recover the perturbation in negative stories. We propose an approach of
+constructing negative samples by mimicking the errors commonly observed in
+existing NLG models, including repeated plots, conflicting logic, and
+long-range incoherence. Experiments on two story datasets demonstrate that
+UNION is a reliable measure for evaluating the quality of generated stories,
+which correlates better with human judgments and is more generalizable than
+existing state-of-the-art metrics.",2020-09-16
+A Comparison of LSTM and BERT for Small Corpus,2020-09-11 14:01:14+00:00,http://arxiv.org/abs/2009.05451v1,Aysu Ezen-Can,"cs.CL, cs.LG",story,"Recent advancements in the NLP field showed that transfer learning helps with
+achieving state-of-the-art results for new tasks by tuning pre-trained models
+instead of starting from scratch. Transformers have made a significant
+improvement in creating new state-of-the-art results for many NLP tasks
+including but not limited to text classification, text generation, and sequence
+labeling. Most of these success stories were based on large datasets. In this
+paper we focus on a real-life scenario that scientists in academia and industry
+face frequently: given a small dataset, can we use a large pre-trained model
+like BERT and get better results than simple models? To answer this question,
+we use a small dataset for intent classification collected for building
+chatbots and compare the performance of a simple bidirectional LSTM model with
+a pre-trained BERT model. Our experimental results show that bidirectional LSTM
+models can achieve significantly higher results than a BERT model for a small
+dataset and these simple models get trained in much less time than tuning the
+pre-trained counterparts. We conclude that the performance of a model is
+dependent on the task and the data, and therefore before making a model choice,
+these factors should be taken into consideration instead of directly choosing
+the most popular model.",2020-09-11
+Navigating Human Language Models with Synthetic Agents,2020-08-10 14:39:53+00:00,http://arxiv.org/abs/2008.04162v7,"Philip Feldman, Antonio Bucchiarone","cs.AI, cs.CL, cs.MA, I.2; I.6; J.4",story,"Modern natural language models such as the GPT-2/GPT-3 contain tremendous
+amounts of information about human belief in a consistently testable form. If
+these models could be shown to accurately reflect the underlying beliefs of the
+human beings that produced the data used to train these models, then such
+models become a powerful sociological tool in ways that are distinct from
+traditional methods, such as interviews and surveys. In this study, We train a
+version of the GPT-2 on a corpora of historical chess games, and then ""launch""
+clusters of synthetic agents into the model, using text strings to create
+context and orientation. We compare the trajectories contained in the text
+generated by the agents/model and compare that to the known ground truth of the
+chess board, move legality, and historical patterns of play. We find that the
+percentages of moves by piece using the model are substantially similar from
+human patterns. We further find that the model creates an accurate latent
+representation of the chessboard, and that it is possible to plot trajectories
+of legal moves across the board using this knowledge.",2020-08-10
+"Paranoid Transformer: Reading Narrative of Madness as Computational
+  Approach to Creativity",2020-07-13 10:18:24+00:00,http://arxiv.org/abs/2007.06290v1,"Yana Agafonova, Alexey Tikhonov, Ivan P. Yamshchikov","cs.CL, cs.AI, cs.CY, 68T50, 68T07, 91F20, 68T42, H.1.2; J.5; K.4",story,"This papers revisits the receptive theory in context of computational
+creativity. It presents a case study of a Paranoid Transformer - a fully
+autonomous text generation engine with raw output that could be read as the
+narrative of a mad digital persona without any additional human post-filtering.
+We describe technical details of the generative system, provide examples of
+output and discuss the impact of receptive theory, chance discovery and
+simulation of fringe mental state on the understanding of computational
+creativity.",2020-07-13
+On Faithfulness and Factuality in Abstractive Summarization,2020-05-02 00:09:16+00:00,http://arxiv.org/abs/2005.00661v1,"Joshua Maynez, Shashi Narayan, Bernd Bohnet, Ryan McDonald",cs.CL,story,"It is well known that the standard likelihood training and approximate
+decoding objectives in neural text generation models lead to less human-like
+responses for open-ended tasks such as language modeling and story generation.
+In this paper we have analyzed limitations of these models for abstractive
+document summarization and found that these models are highly prone to
+hallucinate content that is unfaithful to the input document. We conducted a
+large scale human evaluation of several neural abstractive summarization
+systems to better understand the types of hallucinations they produce. Our
+human annotators found substantial amounts of hallucinated content in all model
+generated summaries. However, our analysis does show that pretrained models are
+better summarizers not only in terms of raw metrics, i.e., ROUGE, but also in
+generating faithful and factual summaries as evaluated by humans. Furthermore,
+we show that textual entailment measures better correlate with faithfulness
+than standard metrics, potentially leading the way to automatic evaluation
+metrics as well as training and decoding criteria.",2020-05-02
+Sparse Text Generation,2020-04-06 13:09:10+00:00,http://arxiv.org/abs/2004.02644v3,"Pedro Henrique Martins, Zita Marinho, André F. T. Martins",cs.CL,story,"Current state-of-the-art text generators build on powerful language models
+such as GPT-2, achieving impressive performance. However, to avoid degenerate
+text, they require sampling from a modified softmax, via temperature parameters
+or ad-hoc truncation techniques, as in top-$k$ or nucleus sampling. This
+creates a mismatch between training and testing conditions. In this paper, we
+use the recently introduced entmax transformation to train and sample from a
+natively sparse language model, avoiding this mismatch. The result is a text
+generator with favorable performance in terms of fluency and consistency, fewer
+repetitions, and n-gram diversity closer to human text. In order to evaluate
+our model, we propose three new metrics for comparing sparse or truncated
+distributions: $\epsilon$-perplexity, sparsemax score, and Jensen-Shannon
+divergence. Human-evaluated experiments in story completion and dialogue
+generation show that entmax sampling leads to more engaging and coherent
+stories and conversations.",2020-04-06
+Semantics of the Unwritten,2020-04-05 16:55:09+00:00,http://arxiv.org/abs/2004.02251v1,"He Bai, Peng Shi, Jimmy Lin, Luchen Tan, Kun Xiong, Wen Gao, Jie Liu, Ming Li",cs.CL,story,"The semantics of a text is manifested not only by what is read, but also by
+what is not read. In this article, we will study how those implicit ""not read""
+information such as end-of-paragraph (EOP) and end-of-sequence (EOS) affect the
+quality of text generation. Transformer-based pretrained language models (LMs)
+have demonstrated the ability to generate long continuations with good quality.
+This model gives us a platform for the first time to demonstrate that paragraph
+layouts and text endings are also important components of human writing.
+Specifically, we find that pretrained LMs can generate better continuations by
+learning to generate the end of the paragraph (EOP) in the fine-tuning stage.
+Experimental results on English story generation show that EOP can lead to
+higher BLEU score and lower EOS perplexity. To further investigate the
+relationship between text ending and EOP, we conduct experiments with a
+self-collected Chinese essay dataset on Chinese-GPT2, a character level LM
+without paragraph breaker or EOS during pre-training. Experimental results show
+that the Chinese GPT2 can generate better essay endings with paragraph
+information. Experiments on both English stories and Chinese essays demonstrate
+that learning to end paragraphs can benefit the continuation generation with
+pretrained LMs.",2020-04-05
+Counterfactual Story Reasoning and Generation,2019-09-09 18:08:35+00:00,http://arxiv.org/abs/1909.04076v2,"Lianhui Qin, Antoine Bosselut, Ari Holtzman, Chandra Bhagavatula, Elizabeth Clark, Yejin Choi","cs.CL, cs.AI",story,"Counterfactual reasoning requires predicting how alternative events, contrary
+to what actually happened, might have resulted in different outcomes. Despite
+being considered a necessary component of AI-complete systems, few resources
+have been developed for evaluating counterfactual reasoning in narratives.
+  In this paper, we propose Counterfactual Story Rewriting: given an original
+story and an intervening counterfactual event, the task is to minimally revise
+the story to make it compatible with the given counterfactual event. Solving
+this task will require deep understanding of causal narrative chains and
+counterfactual invariance, and integration of such story reasoning capabilities
+into conditional language generation models.
+  We present TimeTravel, a new dataset of 29,849 counterfactual rewritings,
+each with the original story, a counterfactual event, and human-generated
+revision of the original story compatible with the counterfactual event.
+Additionally, we include 80,115 counterfactual ""branches"" without a rewritten
+storyline to support future work on semi- or un-supervised approaches to
+counterfactual story rewriting.
+  Finally, we evaluate the counterfactual rewriting capacities of several
+competitive baselines based on pretrained language models, and assess whether
+common overlap and model-based automatic metrics for text generation correlate
+well with human scores for counterfactual rewriting.",2019-09-09
+WriterForcing: Generating more interesting story endings,2019-07-18 19:29:29+00:00,http://arxiv.org/abs/1907.08259v1,"Prakhar Gupta, Vinayshekhar Bannihatti Kumar, Mukul Bhutani, Alan W Black","cs.LG, cs.CL, stat.ML",story,"We study the problem of generating interesting endings for stories. Neural
+generative models have shown promising results for various text generation
+problems. Sequence to Sequence (Seq2Seq) models are typically trained to
+generate a single output sequence for a given input sequence. However, in the
+context of a story, multiple endings are possible. Seq2Seq models tend to
+ignore the context and generate generic and dull responses. Very few works have
+studied generating diverse and interesting story endings for a given story
+context. In this paper, we propose models which generate more diverse and
+interesting outputs by 1) training models to focus attention on important
+keyphrases of the story, and 2) promoting generation of non-generic words. We
+show that the combination of the two leads to more diverse and interesting
+endings.",2019-07-18
+Towards Content Transfer through Grounded Text Generation,2019-05-13 21:36:43+00:00,http://arxiv.org/abs/1905.05293v1,"Shrimai Prabhumoye, Chris Quirk, Michel Galley",cs.CL,story,"Recent work in neural generation has attracted significant interest in
+controlling the form of text, such as style, persona, and politeness. However,
+there has been less work on controlling neural text generation for content.
+This paper introduces the notion of Content Transfer for long-form text
+generation, where the task is to generate a next sentence in a document that
+both fits its context and is grounded in a content-rich external textual source
+such as a news story. Our experiments on Wikipedia data show significant
+improvements against competitive baselines. As another contribution of this
+paper, we release a benchmark dataset of 640k Wikipedia referenced sentences
+paired with the source articles to encourage exploration of this new task.",2019-05-13
+Strategies for Structuring Story Generation,2019-02-04 10:23:39+00:00,http://arxiv.org/abs/1902.01109v2,"Angela Fan, Mike Lewis, Yann Dauphin",cs.CL,story,"Writers generally rely on plans or sketches to write long stories, but most
+current language models generate word by word from left to right. We explore
+coarse-to-fine models for creating narrative texts of several hundred words,
+and introduce new models which decompose stories by abstracting over actions
+and entities. The model first generates the predicate-argument structure of the
+text, where different mentions of the same entity are marked with placeholder
+tokens. It then generates a surface realization of the predicate-argument
+structure, and finally replaces the entity placeholders with context-sensitive
+names and references. Human judges prefer the stories from our models to a wide
+range of previous approaches to hierarchical text generation. Extensive
+analysis shows that our methods can help improve the diversity and coherence of
+events and entities in generated stories.",2019-02-04
+"Co-occurrence of the Benford-like and Zipf Laws Arising from the Texts
+  Representing Human and Artificial Languages",2018-03-06 12:24:42+00:00,http://arxiv.org/abs/1803.03667v1,"Evgeny Shulzinger, Irina Legchenkova, Edward Bormashenko","cs.CL, physics.soc-ph, stat.OT",story,"We demonstrate that large texts, representing human (English, Russian,
+Ukrainian) and artificial (C++, Java) languages, display quantitative patterns
+characterized by the Benford-like and Zipf laws. The frequency of a word
+following the Zipf law is inversely proportional to its rank, whereas the total
+numbers of a certain word appearing in the text generate the uneven
+Benford-like distribution of leading numbers. Excluding the most popular words
+essentially improves the correlation of actual textual data with the Zipfian
+distribution, whereas the Benford distribution of leading numbers (arising from
+the overall amount of a certain word) is insensitive to the same elimination
+procedure. The calculated values of the moduli of slopes of double
+logarithmical plots for artificial languages (C++, Java) are markedly larger
+than those for human ones.",2018-03-06
+Story Generation from Sequence of Independent Short Descriptions,2017-07-18 07:08:31+00:00,http://arxiv.org/abs/1707.05501v2,"Parag Jain, Priyanka Agrawal, Abhijit Mishra, Mohak Sukhwani, Anirban Laha, Karthik Sankaranarayanan",cs.CL,story,"Existing Natural Language Generation (NLG) systems are weak AI systems and
+exhibit limited capabilities when language generation tasks demand higher
+levels of creativity, originality and brevity. Effective solutions or, at least
+evaluations of modern NLG paradigms for such creative tasks have been elusive,
+unfortunately. This paper introduces and addresses the task of coherent story
+generation from independent descriptions, describing a scene or an event.
+Towards this, we explore along two popular text-generation paradigms -- (1)
+Statistical Machine Translation (SMT), posing story generation as a translation
+problem and (2) Deep Learning, posing story generation as a sequence to
+sequence learning problem. In SMT, we chose two popular methods such as phrase
+based SMT (PB-SMT) and syntax based SMT (SYNTAX-SMT) to `translate' the
+incoherent input text into stories. We then implement a deep recurrent neural
+network (RNN) architecture that encodes sequence of variable length input
+descriptions to corresponding latent representations and decodes them to
+produce well formed comprehensive story like summaries. The efficacy of the
+suggested approaches is demonstrated on a publicly available dataset with the
+help of popular machine translation and summarization evaluation metrics.",2017-07-18
+A Theme-Rewriting Approach for Generating Algebra Word Problems,2016-10-19 20:49:23+00:00,http://arxiv.org/abs/1610.06210v1,"Rik Koncel-Kedziorski, Ioannis Konstas, Luke Zettlemoyer, Hannaneh Hajishirzi",cs.CL,story,"Texts present coherent stories that have a particular theme or overall
+setting, for example science fiction or western. In this paper, we present a
+text generation method called {\it rewriting} that edits existing
+human-authored narratives to change their theme without changing the underlying
+story. We apply the approach to math word problems, where it might help
+students stay more engaged by quickly transforming all of their homework
+assignments to the theme of their favorite movie without changing the math
+concepts that are being taught. Our rewriting method uses a two-stage decoding
+process, which proposes new words from the target theme and scores the
+resulting stories according to a number of factors defining aspects of
+syntactic, semantic, and thematic coherence. Experiments demonstrate that the
+final stories typically represent the new theme well while still testing the
+original math concepts, outperforming a number of baselines. We also release a
+new dataset of human-authored rewrites of math word problems in several themes.",2016-10-19
